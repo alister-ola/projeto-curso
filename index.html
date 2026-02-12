@@ -207,10 +207,10 @@ function enviarLead(event) {
   event.preventDefault();
 
   const nomesPerfis = {
-    A: "O Impulsivo",
+    A: "O Consumidor Impulsivo",
     B: "O Evitador",
-    C: "O Planejador Ansioso",
-    D: "O Investidor Consciente"
+    C: "O Estrategista Paralisado",
+    D: "O Acumulador Cauteloso "
   };
 
   document.getElementById("perfilHidden").value = nomesPerfis[perfilFinal];
@@ -221,22 +221,22 @@ function enviarLead(event) {
 function mostrarResultadoFinal() {
   const perfis = {
     A: {
-      nome: "🟠 O Impulsivo",
+      nome: "🟠 O Consumidor Impulsivo",
       texto: "Você usa o dinheiro para aliviar emoções. O primeiro passo é criar consciência antes da ação.",
       link: "https://pay.kiwify.com.br/D2PLU7j"
     },
     B: {
-      nome: "🔵 O Evitador",
+      nome: "🔵 O Evitador Financeiro",
       texto: "Evitar o dinheiro gera mais ansiedade. Clareza é o início da liberdade financeira.",
       link: "https://pay.kiwify.com.br/epo9GIC"
     },
     C: {
-      nome: "🟡 O Planejador Ansioso",
+      nome: "🟡 O Estrategista Paralisado",
       texto: "Você busca segurança, mas precisa de simplicidade para avançar.",
       link: "https://pay.kiwify.com.br/7zC3nzB"
     },
     D: {
-      nome: "🟢 O Investidor Consciente",
+      nome: "🟢 O Acumulador Cauteloso",
       texto: "Você já está no caminho certo. Agora é hora de escalar.",
       link: "https://pay.kiwify.com.br/cOiENhL"
     }
@@ -259,5 +259,6 @@ function mostrarResultadoFinal() {
 
 </body>
 </html>
+
 
 
