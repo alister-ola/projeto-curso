@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu curso · [Sua Marca]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header app-header">
+    <div class="container app-header__inner">
+      <a class="brand" href="curso.html">[Sua Marca]</a>
+
+      <nav class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="curso.html" aria-current="page">Meu curso</a></li>
+          <li><a href="#materiais">Materiais</a></li>
+          <li><a href="#">Suporte</a></li>
+        </ul>
+      </nav>
+
+      <div class="user">
+        <span class="user__name">[Nome do aluno]</span>
+        <span class="avatar" aria-hidden="true">[A]</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Boas-vindas -->
+    <section class="welcome" aria-labelledby="titulo-boas-vindas">
+      <div class="container welcome__grid">
+        <div>
+          <p class="eyebrow">[NOME DO CURSO]</p>
+          <h1 id="titulo-boas-vindas" class="display">Bom te ver de volta, [Nome].</h1>
+          <p class="lead">Você concluiu <strong>6 das 16 aulas</strong>. Continue no ponto em que parou.</p>
+        </div>
+
+        <section class="card-dark resume" aria-labelledby="titulo-continuar">
+          <p class="eyebrow">Continue de onde parou</p>
+          <h2 id="titulo-continuar">Aula 3 · [Título da aula]</h2>
+          <p class="resume__meta">Módulo 1 · 12 min restantes</p>
+
+          <div class="progress-row">
+            <progress class="progress progress--on-dark" value="38" max="100" aria-label="Progresso da aula">38%</progress>
+            <span class="progress-row__value" aria-hidden="true">38%</span>
+          </div>
+
+          <a class="btn btn--light" href="#">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            Assistir agora
+          </a>
+        </section>
+      </div>
+    </section>
+
+    <!-- Módulos -->
+    <section class="modules-section" aria-labelledby="titulo-modulos">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="titulo-modulos">Módulos do curso</h2>
+          <p>4 módulos · 16 aulas · 3h 25min</p>
+        </div>
+
+        <ol class="modules" role="list">
+          <!-- Módulo 01 — concluído -->
+          <li class="module module--done">
+            <span class="module__num" aria-hidden="true">01</span>
+            <div class="module__body">
+              <h3 class="module__title"><span class="sr-only">Módulo 01: </span>[Título do módulo 1]</h3>
+              <p class="module__meta">[N] aulas · [duração]</p>
+            </div>
+            <div class="module__actions">
+              <span class="badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>
+                Concluído
+              </span>
+              <a class="btn btn--outline" href="#">Revisar<span class="sr-only"> o módulo 01</span></a>
+            </div>
+          </li>
+
+          <!-- Módulo 02 — em andamento -->
+          <li class="module module--current">
+            <span class="module__num" aria-hidden="true">02</span>
+            <div class="module__body">
+              <h3 class="module__title"><span class="sr-only">Módulo 02: </span>[Título do módulo 2]</h3>
+              <p class="module__meta">[N] aulas · [duração]<span class="sr-only"> · Em andamento</span></p>
+              <div class="progress-row">
+                <progress class="progress" value="50" max="100" aria-label="Progresso do módulo 02">50%</progress>
+                <span class="progress-row__value" aria-hidden="true">50%</span>
+              </div>
+            </div>
+            <div class="module__actions">
+              <a class="btn btn--primary" href="#">Continuar<span class="sr-only"> o módulo 02</span></a>
+            </div>
+          </li>
+
+          <!-- Módulo 03 — não iniciado -->
+          <li class="module module--todo">
+            <span class="module__num" aria-hidden="true">03</span>
+            <div class="module__body">
+              <h3 class="module__title"><span class="sr-only">Módulo 03: </span>[Título do módulo 3]</h3>
+              <p class="module__meta">[N] aulas · [duração]<span class="sr-only"> · Não iniciado</span></p>
+            </div>
+            <div class="module__actions">
+              <a class="btn btn--outline" href="#">Começar<span class="sr-only"> o módulo 03</span></a>
+            </div>
+          </li>
+
+          <!-- Módulo 04 — não iniciado -->
+          <li class="module module--todo">
+            <span class="module__num" aria-hidden="true">04</span>
+            <div class="module__body">
+              <h3 class="module__title"><span class="sr-only">Módulo 04: </span>[Título do módulo 4]</h3>
+              <p class="module__meta">[N] aulas · [duração]<span class="sr-only"> · Não iniciado</span></p>
+            </div>
+            <div class="module__actions">
+              <a class="btn btn--outline" href="#">Começar<span class="sr-only"> o módulo 04</span></a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Materiais e certificado -->
+    <section class="extras" aria-label="Materiais e certificado">
+      <div class="container extras__grid">
+        <article id="materiais" class="card extra-card">
+          <span class="extra-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></svg>
+          </span>
+          <h2>Materiais do curso</h2>
+          <p>Baixe as planilhas, modelos e resumos de cada módulo.</p>
+          <a class="btn btn--outline" href="#">Ver materiais</a>
+        </article>
+
+        <article class="card extra-card">
+          <span class="extra-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 21.42a.5.5 0 0 1-.81.47l-3.58-2.69a1 1 0 0 0-1.2 0l-3.59 2.69a.5.5 0 0 1-.81-.47l1.51-8.53"/></svg>
+          </span>
+          <h2>Seu certificado</h2>
+          <p>Conclua os 4 módulos para liberar o certificado.</p>
+          <a class="btn btn--outline" href="#">Ver requisitos</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
